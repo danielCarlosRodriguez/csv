@@ -1,17 +1,25 @@
 let arrayStock2 = [];
 let arrayLocales = ["Locales"];
 let linea = [];
- 
+
+
+ //document.getElementById(spin).style.display = "block";
+
 
 var input = document.getElementById("file"),
   code = document.getElementById("code");
 
 input.addEventListener("change", function () {
   var file = input.files[0];
+ 
+ $("#spin").show();
+ 
 
   var reader = new FileReader();
   reader.onload = function (e) {
     var json;
+
+     $("#spin").hide();
 
     let aa = e.target.result;
 

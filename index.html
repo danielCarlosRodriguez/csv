@@ -22,11 +22,25 @@
 </head>
 <body>
 
-    <div class="container"> 
-        <input id="file" type="file" accept="txt/json" /><br/>
+  
+    <div class="container my-5 text-center"> 
+      <h5>Cargá un archivo</h5>
+        <input class="btn btn-primary my-2" id="file" type="file" accept="txt/json" /><br/>
+        <h5>Luego seleccioná todo el contenido, copiá y pegá en un excel</h5>
   </div>
     
-<div id="contenedor-locales" class="bg-primary"></div>
+
+
+<div class="d-flex justify-content-center" >
+
+  <div class="spinner-border collapse" role="status" id="spin">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+
+<div class="px-5"> 
+<div id="contenedor-locales" ></div>
 <div id="contenedor-codigos0" class="fs-7"></div>
 <div id="contenedor-codigos23" class="fs-7"></div>
 <div id="contenedor-codigos46" class="fs-7"></div>
@@ -62790,7 +62804,7 @@
 <div id="contenedor-codigos1443480" class=fs-7"></div>
 <div id="contenedor-codigos1443503" class=fs-7"></div>
 
-
+  </div>
     
 
 
@@ -62799,7 +62813,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 
  
 
 
