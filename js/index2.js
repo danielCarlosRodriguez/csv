@@ -2,7 +2,7 @@ let arrayStock2 = [];
 let arrayLocales = ["Locales"];
 let linea = [];
 const codigos = document.querySelector("codigos");
-let html = " "; 
+let html = " ";
 
 var input = document.getElementById("file"),
   code = document.getElementById("code");
@@ -94,9 +94,8 @@ input.addEventListener("change", function () {
 
       html += `<div id="contenedor-codigos${i}" class="fs-7">${linea}</div>`;
       codigos.innerHTML = html;
-     
+
       //appDiv.innerHTML = `<div id="contenedor-codigos${i}" class="fs-7">${linea}</div>`;
-     
 
       //document.getElementById("contenedor-codigos" + i).innerHTML = linea;
       linea = [];
@@ -104,11 +103,6 @@ input.addEventListener("change", function () {
   };
   reader.readAsText(file);
 });
-
-
-
-
-
 
 // for (let i = 1; i <= 10; i++) {
 //   html += `<div>${i}</div>`;
